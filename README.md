@@ -11,3 +11,4 @@ vueAdmin-template文件夹存放前后端分离的前端文件。项目中的数
 2、django传统页面采用session登录，前后端分离项目采用token登录（即根据用户提供的用户名和密码等信息获取到token并保存到cookie，再根据token获取用户其他个人信息保存到vuex的store。这样就完成了用户的登录功能）
 
 注意：ajax与axios发送post请求的区别，ajax默认发送post请求是application/x-www-form-urlencoded，而axios发送post请求是json，这样django后台是接受不到前端请求的，为了解决这个问题引入了jquery，jquery提供了$.param方法，非常方便，具体见代码。
+
