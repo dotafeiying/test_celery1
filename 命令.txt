@@ -1,0 +1,4 @@
+venv\Scripts\activate
+python manage.py celery -A test_celery worker -l info
+python manage.py celery -A test_celery beat -l info
+pip freeze >requirements.txt
